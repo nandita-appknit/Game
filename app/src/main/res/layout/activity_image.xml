@@ -81,13 +81,24 @@
 
     <ListView
         android:id="@+id/lvList"
-        android:layout_width="0dp"
-        android:layout_height="327dp"
+        android:layout_width="409dp"
+        android:layout_height="221dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="12dp"
         android:entries="@array/characters"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+    <Button
+        android:id="@+id/bnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:onClick="NextActivityonclick"
+        android:text="List View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

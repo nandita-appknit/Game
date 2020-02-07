@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -24,8 +25,10 @@ class Image : AppCompatActivity() {
             }
 
         }
+    }
+    fun NextActivityonclick(view: View) {
 
-
+        startActivity(Intent(this, list::class.java))
     }
     fun radiobuttonclick(view:View){
         if(view==rb_1) {

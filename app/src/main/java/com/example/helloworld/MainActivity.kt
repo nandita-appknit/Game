@@ -26,9 +26,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Guess::class.java))
         }
 
-
-
-
     //event on left button click
     fun leftbuttonclick(view: View) {
       checkIfCorrect(isLeft = true)
