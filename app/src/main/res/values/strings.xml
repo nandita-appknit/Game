@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Game</string>
+
+    <string-array name="characters">
+        <item>Mickey</item>
+        <item>Sea</item>
+        <item>Flower</item>
+        <item>Kotlin</item>
+    </string-array>
 </resources>
