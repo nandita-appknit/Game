@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Image">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="radiobuttonclick"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="32dp"
+            android:onClick="radiobuttonclick"
+            android:text="Mickey"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:onClick="radiobuttonclick"
+            android:text="Sea"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:onClick="radiobuttonclick"
+            android:text="Flower"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:onClick="radiobuttonclick"
+            android:text="Kotlin"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="231dp"
+        android:layout_height="244dp"
+        android:layout_marginBottom="172dp"
+        android:src="@drawable/ic_launcher_background"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars[1]"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

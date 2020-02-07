@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,6 +18,11 @@ class Guess : AppCompatActivity() {
             numcheck()
         }
     }
+    fun NextActivityonclick(view: View) {
+
+        startActivity(Intent(this, Image::class.java))
+    }
+
 
     var num1 = Random.nextInt(100)
 
