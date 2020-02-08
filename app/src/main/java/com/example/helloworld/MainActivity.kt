@@ -42,11 +42,11 @@ class MainActivity : AppCompatActivity() {
         if (isLeft && leftnum > rightnum||!isLeft && leftnum<rightnum)
         {
             points++
-            Toast.makeText(this,"Point Earned",Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,"Point Earned",Toast.LENGTH_SHORT).show()
 
         } else {
             points--
-            Toast.makeText(this,"Lose",Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,"Lose",Toast.LENGTH_SHORT).show()
 
         }
         tvPoints.text = "Points: $points"

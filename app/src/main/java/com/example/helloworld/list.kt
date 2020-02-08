@@ -8,23 +8,23 @@ import com.example.helloworld.list
 import kotlinx.android.synthetic.main.activity_list.*
 
 class list : AppCompatActivity() {
-    private val list = ArrayList<String>()
-    private lateinit var myadapter : ArrayAdapter<String>
+    private val list = ArrayList<String>() //declaring list as array
+    private lateinit var myadapter : ArrayAdapter<String> //declaring adapter to show views for list_items
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
+        //setting up list dynamically;calling its func
         setuplist()
-
+        //list items events on click
         definations.setOnItemClickListener { _,_,index,_ ->
             list.removeAt(index)
-            myadapter.notifyDataSetChanged()
-
+            myadapter.notifyDataSetChanged() //notifying adapter on change of list
         }
     }
+    //func to setup list
     fun setuplist() {
-
         list.add("Hello")
         list.add("World")
         list.add("Kotlin")
@@ -36,8 +36,9 @@ class list : AppCompatActivity() {
         list.add("Fine")
         list.add("Ok")
         list.add("Bye")
+        //passing the adapter -> list;thus creating view
         myadapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list)
-        definations.adapter = myadapter
+        definations.adapter = myadapter //passing listview the list through adapter
 
 
     }
