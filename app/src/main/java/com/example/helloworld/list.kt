@@ -9,17 +9,19 @@ import kotlinx.android.synthetic.main.activity_list.*
 
 class list : AppCompatActivity() {
     private val list = ArrayList<String>()
+    private lateinit var myadapter : ArrayAdapter<String>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
         setuplist()
-        /*definations.setOnItemClickListener{_,_,index,_->
-           list.removeAt(index)
-           // myadapter.notifyDataSetChanged()
 
-        }*/
+        definations.setOnItemClickListener { _,_,index,_ ->
+            list.removeAt(index)
+            myadapter.notifyDataSetChanged()
+
+        }
     }
     fun setuplist() {
 
@@ -32,9 +34,9 @@ class list : AppCompatActivity() {
         list.add("List")
         list.add("Words")
         list.add("Fine")
-         val myadapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list)
-
-
+        list.add("Ok")
+        list.add("Bye")
+        myadapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list)
         definations.adapter = myadapter
 
 
