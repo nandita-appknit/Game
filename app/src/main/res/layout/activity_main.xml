@@ -34,7 +34,9 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="Press the button of the larger number. If you get it right, you'll earn a point; If you get it wrong, you'll lose a point."
+        android:text="Press the button of the larger number.
+         If you get it right, you'll earn a point; If you get it wrong,
+         you'll lose a point."
 
         android:textSize="16sp"
         android:textStyle="normal"
